@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Mikro Presente</string>
+    <string name="textview">TextView</string>
+    <string name="plugin_qr_decoding_error">com.blikoon.qrcodescanner.error_decoding_image</string>
+    <string name="plugin_qr_extra_param">com.blikoon.qrcodescanner.got_qr_scan_relult</string>
+    <string name="no_data_found">No se pudo obtener una respuesta</string>
+    <string name="no_scan_qr_code">No se pudo escanear el código QR</string>
+</resources>
