@@ -5,17 +5,16 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/background_image"
-    android:paddingEnd="200dp"
+    android:background="@drawable/pantalla_02"
+    android:paddingEnd="224dp"
     android:paddingStart="0dp"
-    android:paddingTop="70dp"
+    android:paddingTop="95dp"
     android:keepScreenOn="true">
 
     <SurfaceView
         android:id="@+id/cameraPreview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="15dp"
         android:layout_gravity="center" />
 
 
@@ -58,11 +57,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="6dp"
-        android:visibility="gone"
-        android:layout_marginTop="98dp"
+        android:layout_marginTop="115dp"
         android:fontFamily="@font/oswald_bold"
         android:text="@string/textview"
         android:textAlignment="viewStart"
         android:textColor="@color/black"
+        android:visibility="gone"
         android:textSize="24sp" />
 </LinearLayout>

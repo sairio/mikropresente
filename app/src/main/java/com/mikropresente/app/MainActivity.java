@@ -1,8 +1,7 @@
 package com.mikropresente.app;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.room.Room;
+import androidx.lifecycle.Observer;
 
 import android.content.Context;
 import android.content.pm.ActivityInfo;
@@ -20,22 +19,22 @@ import com.google.android.gms.vision.CameraSource;
 import com.google.android.gms.vision.Detector;
 import com.google.android.gms.vision.barcode.Barcode;
 import com.google.android.gms.vision.barcode.BarcodeDetector;
-import com.mikropresente.app.db.AppDatabase;
-import com.mikropresente.app.helpers.PermissionsHelper;
+import com.mikropresente.app.db.entity.Participant;
+import com.mikropresente.app.db.repository.ParticipantRepository;
+import com.mikropresente.app.helpers.Constants;
 
 import java.io.IOException;
 
 public class MainActivity extends AppCompatActivity implements GestureDetector.OnGestureListener, GestureDetector.OnDoubleTapListener {
 
-   public static final int ACTIVITY_RESULT_PERMISSIONS = 201;
-   private @Nullable String code;
    GestureDetector gestureDetector;
-   private static final String LOGTAG = "SAIRIO";
    boolean isToScan = false;
    TextView tvEmail, tvName, tvCode, tvPosition;
    SurfaceView surfaceView;
    CameraSource cameraSource;
    BarcodeDetector barcodeDetector;
+
+    //region Metodos y Eventos del Activity
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,34 +46,20 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
     }
 
     @Override
-    protected void onResume() {
-        super.onResume();
-        checkPermissions();
-    }
-
-    @Override
     public boolean onTouchEvent(MotionEvent event){
         this.gestureDetector.onTouchEvent(event);
-        // Be sure to call the superclass implementation
         return super.onTouchEvent(event);
     }
 
     @Override
-    public boolean onDown(MotionEvent event) {
-
-        return true;
-    }
+    public boolean onDown(MotionEvent event) {        return true;    }
 
     @Override
     public boolean onFling(MotionEvent event1, MotionEvent event2,
-                           float velocityX, float velocityY) {
-        return false;
-    }
+                           float velocityX, float velocityY) {        return false;    }
 
     @Override
-    public void onLongPress(MotionEvent event) {
-
-    }
+    public void onLongPress(MotionEvent event) {    }
 
     @Override
     public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX,
@@ -108,6 +93,9 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
         return false;
     }
 
+    //endregion
+
+    //region Inicializadores
     private void init() {
         tvEmail = findViewById(R.id.tvEmail);
         tvName = findViewById(R.id.tvPerson);
@@ -122,12 +110,8 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
                 .setRequestedPreviewSize(720,500)
                 .setAutoFocusEnabled(true)
                 .build();
-
         initQREvents();
-
         resetText();
-        AppDatabase db = Room.databaseBuilder(getApplicationContext(), AppDatabase.class,
-                "mikro-presente").build();
     }
 
     private void initQREvents() {
@@ -164,45 +148,74 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
             public void receiveDetections(Detector.Detections<Barcode> detections) {
                 final SparseArray<Barcode> qrCodes = detections.getDetectedItems();
                 if (qrCodes.size() > 0) {
-                    Vibrator vibrator = (Vibrator)getApplicationContext().getSystemService(Context.VIBRATOR_SERVICE);
-                    vibrator.vibrate(500);
-
-                    runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-                            Log.i(LOGTAG, qrCodes.valueAt(0).displayValue);
-                            String [] qrData =  qrCodes.valueAt(0).rawValue.split("\\n");
-                            manageData(qrData);
-                            // Stuff that updates the UI
-                        }
-                    });
+                   try {
+                       Vibrator vibrator = (Vibrator)getApplicationContext().getSystemService(Context.VIBRATOR_SERVICE);
+                       vibrator.vibrate(500);
+                       Log.i(Constants.LOGTAG, qrCodes.valueAt(0).displayValue);
+                       Log.i(Constants.LOGTAG, qrCodes.valueAt(0).rawValue);
+                       Log.i(Constants.LOGTAG, qrCodes.valueAt(0).contactInfo.toString());
+                       String [] qrData =  qrCodes.valueAt(0).rawValue.split("\\n");
+                       final String code = getCode(qrData);
+                       runOnUiThread(new Runnable() {
+                           @Override
+                           public void run() {
+                               verifyCode(code);
+                           }
+                       });
+                   } catch(Exception ex) {
+                       Log.w(Constants.LOGTAG, ex.getMessage());
+                       ex.printStackTrace();
+                   }
                 }
             }
         });
     }
 
-    public void manageData(String[] qrData) {
-        resetText();
-        if(qrData.length > 0) {
-            try {
-                String name = qrData[2].split(":")[1];
-                String position = qrData[3].split(":")[1];
-                String email = qrData[4].split(":")[1];
-                String code = qrData[5].split(":")[1].replaceAll(";","");
+    //endregion
 
-                tvCode.setText("Código de Validación: " + code);
-                tvName.setText(name);
-                tvEmail.setText(email);
-                tvPosition.setText(position);
-                ManagePositionColor(position);
+    //region Metodos Generales
+
+    private String getCode(String[] qrData) {
+        String code = null;
+        try {
+            if(qrData.length > 0) {
+                code = qrData[5].split(":")[1].replaceAll(";","");
+            }
+        } catch(Exception ex) {
+            ex.printStackTrace();
+            code = null;
+        }
+        return code;
+    }
+
+    private void verifyCode(String code) {
+        final ParticipantRepository repository = new ParticipantRepository(getApplicationContext());
+        repository.findByCode(code).observe(MainActivity.this, new Observer<Participant>() {
+            @Override
+            public void onChanged(final Participant participant) {
+                if (participant != null) {
+                    manageData(participant);
+                }
+            }
+        });
+    }
+
+    public void manageData(Participant participant) {
+        resetText();
+        if(participant != null) {
+            try {
+                tvCode.setText("Código de Validación: " + participant.code);
+                tvName.setText(participant.name);
+                tvEmail.setText(participant.email);
+                tvPosition.setText(participant.position);
+                ManagePositionColor(participant.position);
             } catch(Exception ex) {
-                Log.e(LOGTAG, ex.getMessage());
+                Log.e(Constants.LOGTAG, ex.getMessage());
                 ex.printStackTrace();
-                resetText();
-                tvName.setText("Error en datos de codigo QR " + ex.getMessage());
+                tvName.setText(R.string.invalid_qr_code);
             }
         } else {
-            tvName.setText("Contenido de codigo QR Incorrecto");
+            tvName.setText(R.string.invalid_qr_code);
         }
     }
 
@@ -248,14 +261,5 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
         tvPosition.setBackgroundColor(color);
     }
 
-    private void checkPermissions() {
-        //Comprobacion de permisos para poder continuar. Necesario para versiones >= a Android 6.0
-        try {
-            if (new PermissionsHelper().permissionCheck(this, ACTIVITY_RESULT_PERMISSIONS)) {
-                Log.i(LOGTAG, "permissions ok");
-            }
-        } catch (Exception e) {
-            tvEmail.setText(e.getMessage());
-        }
-    }
+    //endregion
 }

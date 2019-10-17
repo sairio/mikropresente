@@ -5,4 +5,14 @@
     <string name="plugin_qr_extra_param">com.blikoon.qrcodescanner.got_qr_scan_relult</string>
     <string name="no_data_found">No se pudo obtener una respuesta</string>
     <string name="no_scan_qr_code">No se pudo escanear el código QR</string>
+    <string name="loading_please_wait">Cargado, Por Favor Espere ...</string>
+    <string name="please_accept_permissions">Debe aceptar todos los permisos</string>
+    <string name="error_verifing_db">Error verificando datos en la base de datos</string>
+    <string name="error_reading_data">Error leyendo datos</string>
+    <string name="action_check_db_data">Verificando datos</string>
+    <string name="no_data_in_db">No hay datos cargados</string>
+    <string name="saving_data">Registrando datos</string>
+    <string name="data_saved">Registros Guardados</string>
+    <string name="permissions_ok">permissions Ok</string>
+    <string name="invalid_qr_code">Codigo Inválido</string>
 </resources>

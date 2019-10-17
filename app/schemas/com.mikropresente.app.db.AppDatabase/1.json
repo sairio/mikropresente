@@ -2,11 +2,11 @@
   "formatVersion": 1,
   "database": {
     "version": 1,
-    "identityHash": "f96c7ac804304109cee9d76b3aff9b26",
+    "identityHash": "9707b3eb73691e0f96c3a326df843811",
     "entities": [
       {
         "tableName": "Participant",
-        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`uid` INTEGER NOT NULL, `name` TEXT, `position` TEXT, `email` TEXT, `code` TEXT, PRIMARY KEY(`uid`))",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`uid` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `name` TEXT, `position` TEXT, `email` TEXT, `code` TEXT)",
         "fields": [
           {
             "fieldPath": "uid",
@@ -43,7 +43,7 @@
           "columnNames": [
             "uid"
           ],
-          "autoGenerate": false
+          "autoGenerate": true
         },
         "indices": [],
         "foreignKeys": []
@@ -52,7 +52,7 @@
     "views": [],
     "setupQueries": [
       "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
-      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'f96c7ac804304109cee9d76b3aff9b26')"
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '9707b3eb73691e0f96c3a326df843811')"
     ]
   }
 }

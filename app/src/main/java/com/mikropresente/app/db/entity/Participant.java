@@ -7,7 +7,7 @@ import androidx.room.PrimaryKey;
 
 @Entity
 public class Participant {
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
     @NonNull
     public int uid;
 
