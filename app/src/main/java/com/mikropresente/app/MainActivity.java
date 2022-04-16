@@ -79,6 +79,7 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
 
     @Override
     public boolean onDoubleTap(MotionEvent event) {
+        isToScan = !isToScan;
         resetText();
         return true;
     }
@@ -123,7 +124,6 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
                 } catch(IOException ex){
                     ex.printStackTrace();
                 }
-                isToScan = true;
                 resetText();
             }
 
@@ -151,6 +151,7 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
                    try {
                        Vibrator vibrator = (Vibrator)getApplicationContext().getSystemService(Context.VIBRATOR_SERVICE);
                        vibrator.vibrate(500);
+                       isToScan = false;
                        Log.i(Constants.LOGTAG, qrCodes.valueAt(0).displayValue);
                        Log.i(Constants.LOGTAG, qrCodes.valueAt(0).rawValue);
                        Log.i(Constants.LOGTAG, qrCodes.valueAt(0).contactInfo.toString());
@@ -234,7 +235,6 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
             tvPosition.setVisibility(View.VISIBLE);
             surfaceView.setVisibility(View.GONE);
         }
-        isToScan = !isToScan;
         tvCode.setText("");
         tvName.setText("");
         tvEmail.setText("");

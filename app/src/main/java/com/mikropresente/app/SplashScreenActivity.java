@@ -79,12 +79,12 @@ public class SplashScreenActivity extends AppCompatActivity {
         tvMessage.setText(getResources().getString(R.string.saving_data));
         try {
             for (int i = 0; i < rows.size(); i++) {
-                Log.d(Constants.LOGTAG, String.format("row %s: %s, %s %s %s", i, rows.get(i)[0], rows.get(i)[1], rows.get(i)[2], rows.get(i)[3]));
                 Participant participant = new Participant();
-                participant.code = rows.get(i)[0].trim();
-                participant.name = rows.get(i)[1].trim();
-                participant.position = rows.get(i)[2].trim();
-                participant.email = rows.get(i)[3].trim();
+                participant.name =rows.get(i)[0].trim() + " " + rows.get(i)[1].trim();
+                participant.email = rows.get(i)[2].trim();
+                participant.position = rows.get(i)[3].trim();
+                participant.code = rows.get(i)[5].trim();
+
                 repository.insert(participant);
             }
             startActivity(new Intent(getApplicationContext(), MainActivity.class));

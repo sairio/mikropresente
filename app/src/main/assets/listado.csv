@@ -1,4 +1,319 @@
-﻿CODIGO DE VALIDACION;NOMBRE;TIPO DE ENTRADA;CORREO ELECTRONICO
-CF001;RAUL STORY;CONFERENCISTA;RAUL.STORY@MIKROPRESENTE.COM
-EX001;JENNIFER SANCHEZ;EXHIBICION;JENNIFER.SANCHEZ@ULTRACAUCHOS.COM
-PC001;ALCALDIA DE VALENCIA;GENERAL;PASE DE CORTESIA
+﻿nombre;apellido;email;tipoEntrada;telefono;codigo
+RAUL;STORY;raul.story@mikropresente.com;CONFERENCISTA;;CF001
+JACOBO;VIDARTE;jacobovidarte@gmail.com;CONFERENCISTA;;CF002
+NELSON;LAVOE;nelsonlavoe@gmail.com;CONFERENCISTA;;CF003
+HERMES;LÓPEZ;hlopez@natseb.com;CONFERENCISTA;;CF004
+ZULAY;MORENO;zulay@guayoyomarketing.com;CONFERENCISTA;;CF005
+BARBARA;SALAZAR;barbara.salazar@mikropresente.com;STAFF;;ST001
+CARLOS;STORY;carlos.story@mikropresente.com;STAFF;;ST002
+WILLIAM;KOLKOWSKI;william.kolkowski@mikropresente.com;STAFF;;ST003
+NICOLE;STORY;nicole@story.com.ve;STAFF;;ST004
+NAURA;SERGENT;sergent_naur@hotmail.com;STAFF;;ST005
+SUSANA;SERGENT;susana.sergent@mikropresente.com;STAFF;;ST006
+MARIA ALEJANDRA;ORDAZ;mariale.gm28@gmail.com;STAFF;;ST007
+JENNIFER;SANCHEZ;jennifer.sanchez@ultracauchos.com;STAFF;;ST008
+ANABEL;FEBRES;febres.anabell@gmail.com;GENERAL;;GE001
+ELIZABETH;CERERO;elizabethcerero@gmail.com;GENERAL;;GE002
+JOSÉ;CERERO;jgcerero@gmail.com;GENERAL;;GE003
+MARÍA;URBANO;maria.urbanor@gmail.com;GENERAL;;GE004
+DONIAMEL;GONZÁLEZ;gondauca@gmail.com;GENERAL;;GE005
+LAURIMER;ROBLES;laurimar.roblesn@gmail.com;GENERAL;;GE006
+MARJORIETH;SALAZAR;marjoriethysv@gmail.com;GENERAL;;GE007
+MARÍA CRISTINA;ZAMBRANO;inversionesyvariedadesomc@gmail.com;GENERAL;;GE008
+ILYANA;CERVINI;ilyanacervini@gmail.com;GENERAL;;GE009
+ANDREA;LEÓN;gonzalezgreycimar23@gmail.com;GENERAL;;GE010
+ENDER;ZAMBRANO;endertito2112@gmail.com;GENERAL;;GE011
+MARIELIS;SEQUERA;marigeo253@gmail.com;GENERAL;;GE012
+ADALBELIS;MARTÍNEZ;adalbelis.lm@gmail.com;GENERAL;;GE013
+CARLOS;VARELA;carlosvarela66@gmail.com;GENERAL;;GE014
+BARBARA;FREITAS;barbarafreitas1710@gmail.com;GENERAL;;GE015
+MELINA;CAURO;melina.cauro@gmail.com;GENERAL;;GE016
+PANAYOTA;COLITSIS;tuinmuebleporaqui@gmail.com;GENERAL;;GE017
+KARLA;GONZÁLEZ;karlavgp24@gmail.com;GENERAL;;GE018
+FRANCISCO;LOZADA;cisco.cruzroja@gmail.com;GENERAL;;GE019
+CARLOS;STORY;carlos@story.com.ve;INVITADO ESPECIAL;;IE001
+MIRIAM;RODRÍGUEZ;miriam@story.com.ve;INVITADO ESPECIAL;;IE002
+MARÍA ISABEL;CANALES;elizabcanales@gmail.com;INVITADO ESPECIAL;;IE003
+JOHANA;BASILE;johanabasile@hotmail.com;INVITADO ESPECIAL;;IE004
+KATHERIN;DESTEFANIS;katherindestefanis@gmail.com;INVITADO ESPECIAL;;IE005
+DHAMELIZ;DÍAZ;dhameliz.diaz.t@gmail.com;INVITADO ESPECIAL;;IE006
+KEIDDYS;MONTIEL;kmontiel.novitamuebles@gmail.com;INVITADO ESPECIAL;;IE008
+LISZT;PAZOS;pliszt@gmail.com;INVITADO ESPECIAL;;IE010
+ZULLY;VALENCIA;zullyvalencia@gmail.com;INVITADO ESPECIAL;;IE011
+ELENA;TORREALBA;elena.torrealba@i-sar.org;INVITADO ESPECIAL;;IE013
+MARÍA;GUTIERREZ;maria.gutierrez@i-sar.org;INVITADO ESPECIAL;;IE014
+GUSTAVO;VIDARTE;gustavovidarte@gmail.com;INVITADO ESPECIAL;;IE015
+TIBISAY;ROMERO;tibisayromero7@gmail.com;INVITADO ESPECIAL;;IE007
+YOHSIRIS;CEBALLES;adm2.valferco@gmail.com;VIP;;VI001
+CARLOS;BASIL;carlos.basil@krtla.com;VIP;;VI002
+LUIS;SARDI;luis.sardi@gmail.com;VIP;;VI003
+SOL;GREY;solgrey@gmail.com;VIP;;VI004
+SOPHIA;SARDI;sophiasardig@gmail.com;VIP;;VI005
+GABRIEL;PINTO;pintogabriel@gmail.com;VIP;;VI006
+YSIS;MOSQUEDA;ysis.mosqueda@rstory.com.ve;VIP;;VI007
+MÓNICA;GARCÍA;monica.garcia@ultracauchos.com;VIP;;VI008
+SAÚL;HERNÁNDEZ;shernandez@corpolatintrade.com;VIP;;VI009
+MARIANGELA;ALANA;maryalana@hotmail.com;VIP;;VI010
+FRANCISCO;NORIEGA;fnoriega@cso.com.ve;VIP;;VI012
+FRANCIS;SOTO;francisoto1989@gmail.com;VIP;;VI013
+EVELYN;HIDALGO;dulzurashimo@gmail.com;VIP;;VI014
+JONATHAN;MOLINA;jamm26@hotmail.com;VIP;;VI015
+RANDOLFO;BLANCO;randolfoblanco@gmail.com;VIP;;VI016
+MELITZA;ROJAS;melitzarojas18@gmail.com;VIP;;VI017
+PEDRO;BASTARDO;pbastardo72@gmail.com;VIP;;VI018
+XIOMARA;SÁNCHEZ;xsanchez@tramas.com.ve;VIP;;VI019
+MARÍA GABRIELA;RODRÍGUEZ;mgrodriguez@tramas.com.ve;VIP;;VI020
+MARILYN;MORENO;moreno.rotsen@gmail.com;VIP;;VI021
+JHONNY;ROSARIO;jrosario@innova4j.com;VIP;;VI022
+NELSON;LÓPEZ;nlopez86@gmail.com;VIP;;VI023
+GABRIELA;ESPINOZA;gabyespinozafer@gmail.com;VIP;;VI024
+ALEJANDRA;ESPINOZA;alejandramoro4@gmail.com;VIP;;VI025
+JOSÉ;VIEIRA;josevieira3000@gmail.com;INVITADO ESPECIAL;;IE009
+LUIS;BOTTINI;casabriceno2018@gmail.com;VIP;;VI011
+JENNIFER;SANCHEZ;jennifer.sanchez@ultracauchos.com;EXHIBICIÓN;;EX005
+ANGIE;FLOREZ;ventas01@megadatta.com;EXHIBICIÓN;;EX006
+ORIANA;DÍAZ;oriisteph@gmail.com;EXHIBICIÓN;;EX007
+GERMÁN;RODRÍGUEZ;segubiz@gmail.com;EXHIBICIÓN;;EX008
+MARCO;RACCAMARICH;raccamarich@gmail.com;EXHIBICIÓN;;EX009
+ISCANDAR;FERNÁNDEZ;ifernandezortega@icrc.org;EXHIBICIÓN;;EX010
+EVELIN;CAMPOS;evelin@story.com.ve;EXHIBICIÓN;;EX001
+INÉS;REYES;ines.reyes@rstory.com.ve;EXHIBICIÓN;;EX002
+NELMARIE;GUEVARA;ventas@megadatta.com;EXHIBICIÓN;;EX003
+FRANCYS;CÁCERES;publieras@gmail.com;EXHIBICIÓN;;EX004
+MARLIN;GONZÁLEZ;malincgonzalez@gmail.com;VIP;;VI026
+MARIAN;ABDEL;mabdel18@gmail.com;VIP;;VI027
+GERALDINE;RAMÍREZ;geraldineramiva@gmail.com;VIP;;VI028
+OL'BLUE;1;olbluerest@gmail.com;VIP;;VI029
+OL'BLUE;2;olbluerest@gmail.com;VIP;;VI030
+OL'BLUE;3;olbluerest@gmail.com;VIP;;VI031
+FEDERICO;DE MAGHT;demaght@gmail.com;GENERAL;;GE020
+SAMANTHA;MONTILLA;samantham200297@gmail.com;EXHIBICIÓN;;EX011
+IRENE;MORA;irenemorapolanco@gmail.com;EXHIBICIÓN;;EX012
+VIRGINIA;SARDI;virginiasardi@gmail.com;GENERAL;;GE024
+ORIANA;RAMÍREZ;logistics@orbissolutionsllc.com;GENERAL;;GE025
+MARLIN;CARRASQUERO;marlin.carrasquero@gmail.com;GENERAL;;GE021
+JOHNNY;QUINTANA;quintana.26@hotmail.com;GENERAL;;GE022
+CHRISTIAN;MENDOZA;christian.jose06@gmail.com;GENERAL;;GE023
+MARY ELIZABETH;SALAZAR;mesalazar2@gmail.com;GENERAL;;GE026
+ANDREA;PEQUENO;andrea_pequeno@hotmail.com;EXHIBICIÓN;;EX013
+DANIEL;MARIMON;ilbellapizza@gmail.com;EXHIBICIÓN;;EX014
+VICTOR;MARTÍNEZ;ilbellapizza@gmail.com;EXHIBICIÓN;;EX015
+DENISE;CAMARAN;denise.camaran@alice.com.ve;VIP;;VI032
+LUIS HENRIQUE;LÓPEZ;luis.henrique.lopez@alice.com.ve;VIP;;VI033
+FLAVIO;AQUINO;flavio.Aquino@alice.com.ve;VIP;;VI034
+OSCAR;SOTO;oscar.soto@alice.com.ve;VIP;;VI035
+ELSA;ESCOBAR;elsa.escobar@alice.com.ve;VIP;;VI036
+KATHERINE;VEROES;katherine.veroes91@gmail.com;VIP;;VI037
+DANIELA;CASTELLANOS;danielaisab12@gmail.com;VIP;;VI038
+CAROL;BELISARIO;carolbelisario32@gmail.com;VIP;;VI039
+ESTEFANI;COLMENARES;estefaniicolmenares@gmail.com;VIP;;VI040
+CÉSAR;SALAZAR;salazace@gmail.com;GENERAL;;GE027
+CARMEN;ÁLVAREZ;carmen110alvarez@gmail.com;GENERAL;;GE028
+BRITANY;SALAZAR;britanyone07@gmail.com;GENERAL;;GE029
+JOSÉ;SALGADO;diodesigner97@gmail.com;GENERAL;;GE030
+ANITSU;FLORES;venezolanamarketera@gmail.com;GENERAL;;GE031
+YARELIS;ASCANIO;year-57@hotmail.com;EXHIBICIÓN;;EX016
+LUIS;ÁLVAREZ;luisaalvarezcenteno@gmail.com;EXHIBICIÓN;;EX017
+YONERTTY;PEREIRA;yonerttypereira@gmail.com;EXHIBICIÓN;;EX018
+JESÚS;FARFAN;jesusfarfan0809@gmail.com;VIP;;VI041
+PEDRO;CHAVEZ;pedrochavezb45@gmail.com;VIP;;VI042
+ARIATNA;MEDINA;arimedina20@gmail.com;VIP;;VI043
+ANGIBELL;HERNÁNDEZ;angibellhg0702@gmail.com;INVITADO ESPECIAL;;IE012
+MIRTHA;CASTILLO;mirthacastillomega@gmail.com;INVITADO ESPECIAL;;IE016
+JUAN CARLOS;NOGUERA;juancmega@hotmail.com;INVITADO ESPECIAL;;IE017
+AGUSTÍN;COLMENARES;agustincolmenares0208@gmail.com;INVITADO ESPECIAL;;IE018
+JORGE;FELICE;jorgefelice1@gmail.com;CONFERENCISTA;;CF006
+FREDDY;DUDIEL;fjdh1995@gmail.com;INVITADO ESPECIAL;;IE019
+INGRID CAROLINA;DÍAZ;carolina2009261@hotmail.com;VIP;;VI044
+JANEXIS;ZAPATA;janexiszm@gmail.com;INVITADO ESPECIAL;;IE020
+JEAN PAUL;BULOZ;jeanpaulbuloz@gmail.com;INVITADO ESPECIAL;;IE021
+CLAUDIA;PAÉZ;claudiapp18@gmail.com;INVITADO ESPECIAL;;IE022
+RORAIMA;HERNÁNDEZ;roraimahernandez@gmail.com;EXHIBICIÓN;;EX019
+HUMBERTO;TERAN;humbertoshun@hotmail.com;EXHIBICIÓN;;EX020
+FRANCISCO;MAICA;franciscomaica049@gmail.com;VIP;;VI045
+JOSÉ FRANCISCO;RUIZ;dinastiaonlinemail@gmail.com;EXHIBICIÓN;;EX021
+FABIOLA;HERNÁNDEZ;dinastiaonlinemail@gmail.com;EXHIBICIÓN;;EX022
+CHERARDINE;LIZARAZO;geraliz_18@hotmail.com;VIP;;VI046
+CAROLINA;NIÑO;kaivswimwear@gmail.com;INVITADO ESPECIAL;;IE023
+OSWALDO;PINTO;ostherpin@gmail.com;INVITADO ESPECIAL;;IE024
+JOSÉ ALEJANDRO;PORTILLO;carlosstory.263@gmail.com;INVITADO ESPECIAL;;IE025
+MAGDIEL;EGBEH;logistica@gulfoilvzla.com;INVITADO ESPECIAL;;IE026
+GREISI;GONZÁLEZ;marketing@gulfoilvzla.com;INVITADO ESPECIAL;;IE027
+THAIRY;RANGEL;thairyrangel@hotmail.com;GENERAL;;GE032
+JOSÉ GREGORIO;DÍAZ;jdseguros2004@hotmail.com;GENERAL;;GE033
+BRAYAN;CEBALLOS;brayanceballos08@gmail.com;GENERAL;;GE034
+YUXELLYS;YNOJOSA;yuxellysynojoaa@gmail.com;GENERAL;;GE035
+IRENE;GÓMEZ;irenesuenaenradio@gmail.com;INVITADO ESPECIAL;;IE028
+JUAN ANTONIO;RODRÍGUEZ;ipodmusica.ventas@gmail.com;INVITADO ESPECIAL;;IE029
+KATHERINE;PÉREZ;katherinlperezs456@gmail.com;INVITADO ESPECIAL;;IE030
+NATHALY;MOLINA;nathalymolina@hotmail.com;INVITADO ESPECIAL;;IE031
+SILMARI;RIVAS;silmari.urm@gmail.com;INVITADO ESPECIAL;;IE032
+JESÚS;RAMOS;jesusramosurm@gmail.com;INVITADO ESPECIAL;;IE033
+DIANA;RODRÍGUEZ;rodriguezdianav@gmail.com;INVITADO ESPECIAL;;IE034
+ELIZABETH;PINTO;lizapinto01@gmail.com;INVITADO ESPECIAL;;IE035
+ALIRIO;CAMERO;aliriogcg@gmail.com;INVITADO ESPECIAL;;IE036
+LAURA;CACHAZO;laucachazo@gmail.com;GENERAL;;GE036
+EYFRE;MONTERO;eyfremon@gmail.com;VIP;;VI047
+ANTONIO;PECORARO;tony.pecoraro.r@gmail.com;INVITADO ESPECIAL;;IE037
+ROCIO;KAWAY;rokazu@hotmail.com;GENERAL;04144225322;GE037
+JORGE ANDRÉS;GUAREPE;jaguarepek1@gmail.com;GENERAL;;GE038
+LENDA;GARCÍA;;INVITADO ESPECIAL;;IE038nombre;apellido;email;tipoEntrada;telefono;codigo
+RAUL;STORY;raul.story@mikropresente.com;CONFERENCISTA;;CF001
+JACOBO;VIDARTE;jacobovidarte@gmail.com;CONFERENCISTA;;CF002
+NELSON;LAVOE;nelsonlavoe@gmail.com;CONFERENCISTA;;CF003
+HERMES;LÓPEZ;hlopez@natseb.com;CONFERENCISTA;;CF004
+ZULAY;MORENO;zulay@guayoyomarketing.com;CONFERENCISTA;;CF005
+BARBARA;SALAZAR;barbara.salazar@mikropresente.com;STAFF;;ST001
+CARLOS;STORY;carlos.story@mikropresente.com;STAFF;;ST002
+WILLIAM;KOLKOWSKI;william.kolkowski@mikropresente.com;STAFF;;ST003
+NICOLE;STORY;nicole@story.com.ve;STAFF;;ST004
+NAURA;SERGENT;sergent_naur@hotmail.com;STAFF;;ST005
+SUSANA;SERGENT;susana.sergent@mikropresente.com;STAFF;;ST006
+MARIA ALEJANDRA;ORDAZ;mariale.gm28@gmail.com;STAFF;;ST007
+JENNIFER;SANCHEZ;jennifer.sanchez@ultracauchos.com;STAFF;;ST008
+ANABEL;FEBRES;febres.anabell@gmail.com;GENERAL;;GE001
+ELIZABETH;CERERO;elizabethcerero@gmail.com;GENERAL;;GE002
+JOSÉ;CERERO;jgcerero@gmail.com;GENERAL;;GE003
+MARÍA;URBANO;maria.urbanor@gmail.com;GENERAL;;GE004
+DONIAMEL;GONZÁLEZ;gondauca@gmail.com;GENERAL;;GE005
+LAURIMER;ROBLES;laurimar.roblesn@gmail.com;GENERAL;;GE006
+MARJORIETH;SALAZAR;marjoriethysv@gmail.com;GENERAL;;GE007
+MARÍA CRISTINA;ZAMBRANO;inversionesyvariedadesomc@gmail.com;GENERAL;;GE008
+ILYANA;CERVINI;ilyanacervini@gmail.com;GENERAL;;GE009
+ANDREA;LEÓN;gonzalezgreycimar23@gmail.com;GENERAL;;GE010
+ENDER;ZAMBRANO;endertito2112@gmail.com;GENERAL;;GE011
+MARIELIS;SEQUERA;marigeo253@gmail.com;GENERAL;;GE012
+ADALBELIS;MARTÍNEZ;adalbelis.lm@gmail.com;GENERAL;;GE013
+CARLOS;VARELA;carlosvarela66@gmail.com;GENERAL;;GE014
+BARBARA;FREITAS;barbarafreitas1710@gmail.com;GENERAL;;GE015
+MELINA;CAURO;melina.cauro@gmail.com;GENERAL;;GE016
+PANAYOTA;COLITSIS;tuinmuebleporaqui@gmail.com;GENERAL;;GE017
+KARLA;GONZÁLEZ;karlavgp24@gmail.com;GENERAL;;GE018
+FRANCISCO;LOZADA;cisco.cruzroja@gmail.com;GENERAL;;GE019
+CARLOS;STORY;carlos@story.com.ve;INVITADO ESPECIAL;;IE001
+MIRIAM;RODRÍGUEZ;miriam@story.com.ve;INVITADO ESPECIAL;;IE002
+MARÍA ISABEL;CANALES;elizabcanales@gmail.com;INVITADO ESPECIAL;;IE003
+JOHANA;BASILE;johanabasile@hotmail.com;INVITADO ESPECIAL;;IE004
+KATHERIN;DESTEFANIS;katherindestefanis@gmail.com;INVITADO ESPECIAL;;IE005
+DHAMELIZ;DÍAZ;dhameliz.diaz.t@gmail.com;INVITADO ESPECIAL;;IE006
+KEIDDYS;MONTIEL;kmontiel.novitamuebles@gmail.com;INVITADO ESPECIAL;;IE008
+LISZT;PAZOS;pliszt@gmail.com;INVITADO ESPECIAL;;IE010
+ZULLY;VALENCIA;zullyvalencia@gmail.com;INVITADO ESPECIAL;;IE011
+ELENA;TORREALBA;elena.torrealba@i-sar.org;INVITADO ESPECIAL;;IE013
+MARÍA;GUTIERREZ;maria.gutierrez@i-sar.org;INVITADO ESPECIAL;;IE014
+GUSTAVO;VIDARTE;gustavovidarte@gmail.com;INVITADO ESPECIAL;;IE015
+TIBISAY;ROMERO;tibisayromero7@gmail.com;INVITADO ESPECIAL;;IE007
+YOHSIRIS;CEBALLES;adm2.valferco@gmail.com;VIP;;VI001
+CARLOS;BASIL;carlos.basil@krtla.com;VIP;;VI002
+LUIS;SARDI;luis.sardi@gmail.com;VIP;;VI003
+SOL;GREY;solgrey@gmail.com;VIP;;VI004
+SOPHIA;SARDI;sophiasardig@gmail.com;VIP;;VI005
+GABRIEL;PINTO;pintogabriel@gmail.com;VIP;;VI006
+YSIS;MOSQUEDA;ysis.mosqueda@rstory.com.ve;VIP;;VI007
+MÓNICA;GARCÍA;monica.garcia@ultracauchos.com;VIP;;VI008
+SAÚL;HERNÁNDEZ;shernandez@corpolatintrade.com;VIP;;VI009
+MARIANGELA;ALANA;maryalana@hotmail.com;VIP;;VI010
+FRANCISCO;NORIEGA;fnoriega@cso.com.ve;VIP;;VI012
+FRANCIS;SOTO;francisoto1989@gmail.com;VIP;;VI013
+EVELYN;HIDALGO;dulzurashimo@gmail.com;VIP;;VI014
+JONATHAN;MOLINA;jamm26@hotmail.com;VIP;;VI015
+RANDOLFO;BLANCO;randolfoblanco@gmail.com;VIP;;VI016
+MELITZA;ROJAS;melitzarojas18@gmail.com;VIP;;VI017
+PEDRO;BASTARDO;pbastardo72@gmail.com;VIP;;VI018
+XIOMARA;SÁNCHEZ;xsanchez@tramas.com.ve;VIP;;VI019
+MARÍA GABRIELA;RODRÍGUEZ;mgrodriguez@tramas.com.ve;VIP;;VI020
+MARILYN;MORENO;moreno.rotsen@gmail.com;VIP;;VI021
+JHONNY;ROSARIO;jrosario@innova4j.com;VIP;;VI022
+NELSON;LÓPEZ;nlopez86@gmail.com;VIP;;VI023
+GABRIELA;ESPINOZA;gabyespinozafer@gmail.com;VIP;;VI024
+ALEJANDRA;ESPINOZA;alejandramoro4@gmail.com;VIP;;VI025
+JOSÉ;VIEIRA;josevieira3000@gmail.com;INVITADO ESPECIAL;;IE009
+LUIS;BOTTINI;casabriceno2018@gmail.com;VIP;;VI011
+JENNIFER;SANCHEZ;jennifer.sanchez@ultracauchos.com;EXHIBICIÓN;;EX005
+ANGIE;FLOREZ;ventas01@megadatta.com;EXHIBICIÓN;;EX006
+ORIANA;DÍAZ;oriisteph@gmail.com;EXHIBICIÓN;;EX007
+GERMÁN;RODRÍGUEZ;segubiz@gmail.com;EXHIBICIÓN;;EX008
+MARCO;RACCAMARICH;raccamarich@gmail.com;EXHIBICIÓN;;EX009
+ISCANDAR;FERNÁNDEZ;ifernandezortega@icrc.org;EXHIBICIÓN;;EX010
+EVELIN;CAMPOS;evelin@story.com.ve;EXHIBICIÓN;;EX001
+INÉS;REYES;ines.reyes@rstory.com.ve;EXHIBICIÓN;;EX002
+NELMARIE;GUEVARA;ventas@megadatta.com;EXHIBICIÓN;;EX003
+FRANCYS;CÁCERES;publieras@gmail.com;EXHIBICIÓN;;EX004
+MARLIN;GONZÁLEZ;malincgonzalez@gmail.com;VIP;;VI026
+MARIAN;ABDEL;mabdel18@gmail.com;VIP;;VI027
+GERALDINE;RAMÍREZ;geraldineramiva@gmail.com;VIP;;VI028
+OL'BLUE;1;olbluerest@gmail.com;VIP;;VI029
+OL'BLUE;2;olbluerest@gmail.com;VIP;;VI030
+OL'BLUE;3;olbluerest@gmail.com;VIP;;VI031
+FEDERICO;DE MAGHT;demaght@gmail.com;GENERAL;;GE020
+SAMANTHA;MONTILLA;samantham200297@gmail.com;EXHIBICIÓN;;EX011
+IRENE;MORA;irenemorapolanco@gmail.com;EXHIBICIÓN;;EX012
+VIRGINIA;SARDI;virginiasardi@gmail.com;GENERAL;;GE024
+ORIANA;RAMÍREZ;logistics@orbissolutionsllc.com;GENERAL;;GE025
+MARLIN;CARRASQUERO;marlin.carrasquero@gmail.com;GENERAL;;GE021
+JOHNNY;QUINTANA;quintana.26@hotmail.com;GENERAL;;GE022
+CHRISTIAN;MENDOZA;christian.jose06@gmail.com;GENERAL;;GE023
+MARY ELIZABETH;SALAZAR;mesalazar2@gmail.com;GENERAL;;GE026
+ANDREA;PEQUENO;andrea_pequeno@hotmail.com;EXHIBICIÓN;;EX013
+DANIEL;MARIMON;ilbellapizza@gmail.com;EXHIBICIÓN;;EX014
+VICTOR;MARTÍNEZ;ilbellapizza@gmail.com;EXHIBICIÓN;;EX015
+DENISE;CAMARAN;denise.camaran@alice.com.ve;VIP;;VI032
+LUIS HENRIQUE;LÓPEZ;luis.henrique.lopez@alice.com.ve;VIP;;VI033
+FLAVIO;AQUINO;flavio.Aquino@alice.com.ve;VIP;;VI034
+OSCAR;SOTO;oscar.soto@alice.com.ve;VIP;;VI035
+ELSA;ESCOBAR;elsa.escobar@alice.com.ve;VIP;;VI036
+KATHERINE;VEROES;katherine.veroes91@gmail.com;VIP;;VI037
+DANIELA;CASTELLANOS;danielaisab12@gmail.com;VIP;;VI038
+CAROL;BELISARIO;carolbelisario32@gmail.com;VIP;;VI039
+ESTEFANI;COLMENARES;estefaniicolmenares@gmail.com;VIP;;VI040
+CÉSAR;SALAZAR;salazace@gmail.com;GENERAL;;GE027
+CARMEN;ÁLVAREZ;carmen110alvarez@gmail.com;GENERAL;;GE028
+BRITANY;SALAZAR;britanyone07@gmail.com;GENERAL;;GE029
+JOSÉ;SALGADO;diodesigner97@gmail.com;GENERAL;;GE030
+ANITSU;FLORES;venezolanamarketera@gmail.com;GENERAL;;GE031
+YARELIS;ASCANIO;year-57@hotmail.com;EXHIBICIÓN;;EX016
+LUIS;ÁLVAREZ;luisaalvarezcenteno@gmail.com;EXHIBICIÓN;;EX017
+YONERTTY;PEREIRA;yonerttypereira@gmail.com;EXHIBICIÓN;;EX018
+JESÚS;FARFAN;jesusfarfan0809@gmail.com;VIP;;VI041
+PEDRO;CHAVEZ;pedrochavezb45@gmail.com;VIP;;VI042
+ARIATNA;MEDINA;arimedina20@gmail.com;VIP;;VI043
+ANGIBELL;HERNÁNDEZ;angibellhg0702@gmail.com;INVITADO ESPECIAL;;IE012
+MIRTHA;CASTILLO;mirthacastillomega@gmail.com;INVITADO ESPECIAL;;IE016
+JUAN CARLOS;NOGUERA;juancmega@hotmail.com;INVITADO ESPECIAL;;IE017
+AGUSTÍN;COLMENARES;agustincolmenares0208@gmail.com;INVITADO ESPECIAL;;IE018
+JORGE;FELICE;jorgefelice1@gmail.com;CONFERENCISTA;;CF006
+FREDDY;DUDIEL;fjdh1995@gmail.com;INVITADO ESPECIAL;;IE019
+INGRID CAROLINA;DÍAZ;carolina2009261@hotmail.com;VIP;;VI044
+JANEXIS;ZAPATA;janexiszm@gmail.com;INVITADO ESPECIAL;;IE020
+JEAN PAUL;BULOZ;jeanpaulbuloz@gmail.com;INVITADO ESPECIAL;;IE021
+CLAUDIA;PAÉZ;claudiapp18@gmail.com;INVITADO ESPECIAL;;IE022
+RORAIMA;HERNÁNDEZ;roraimahernandez@gmail.com;EXHIBICIÓN;;EX019
+HUMBERTO;TERAN;humbertoshun@hotmail.com;EXHIBICIÓN;;EX020
+FRANCISCO;MAICA;franciscomaica049@gmail.com;VIP;;VI045
+JOSÉ FRANCISCO;RUIZ;dinastiaonlinemail@gmail.com;EXHIBICIÓN;;EX021
+FABIOLA;HERNÁNDEZ;dinastiaonlinemail@gmail.com;EXHIBICIÓN;;EX022
+CHERARDINE;LIZARAZO;geraliz_18@hotmail.com;VIP;;VI046
+CAROLINA;NIÑO;kaivswimwear@gmail.com;INVITADO ESPECIAL;;IE023
+OSWALDO;PINTO;ostherpin@gmail.com;INVITADO ESPECIAL;;IE024
+JOSÉ ALEJANDRO;PORTILLO;carlosstory.263@gmail.com;INVITADO ESPECIAL;;IE025
+MAGDIEL;EGBEH;logistica@gulfoilvzla.com;INVITADO ESPECIAL;;IE026
+GREISI;GONZÁLEZ;marketing@gulfoilvzla.com;INVITADO ESPECIAL;;IE027
+THAIRY;RANGEL;thairyrangel@hotmail.com;GENERAL;;GE032
+JOSÉ GREGORIO;DÍAZ;jdseguros2004@hotmail.com;GENERAL;;GE033
+BRAYAN;CEBALLOS;brayanceballos08@gmail.com;GENERAL;;GE034
+YUXELLYS;YNOJOSA;yuxellysynojoaa@gmail.com;GENERAL;;GE035
+IRENE;GÓMEZ;irenesuenaenradio@gmail.com;INVITADO ESPECIAL;;IE028
+JUAN ANTONIO;RODRÍGUEZ;ipodmusica.ventas@gmail.com;INVITADO ESPECIAL;;IE029
+KATHERINE;PÉREZ;katherinlperezs456@gmail.com;INVITADO ESPECIAL;;IE030
+NATHALY;MOLINA;nathalymolina@hotmail.com;INVITADO ESPECIAL;;IE031
+SILMARI;RIVAS;silmari.urm@gmail.com;INVITADO ESPECIAL;;IE032
+JESÚS;RAMOS;jesusramosurm@gmail.com;INVITADO ESPECIAL;;IE033
+DIANA;RODRÍGUEZ;rodriguezdianav@gmail.com;INVITADO ESPECIAL;;IE034
+ELIZABETH;PINTO;lizapinto01@gmail.com;INVITADO ESPECIAL;;IE035
+ALIRIO;CAMERO;aliriogcg@gmail.com;INVITADO ESPECIAL;;IE036
+LAURA;CACHAZO;laucachazo@gmail.com;GENERAL;;GE036
+EYFRE;MONTERO;eyfremon@gmail.com;VIP;;VI047
+ANTONIO;PECORARO;tony.pecoraro.r@gmail.com;INVITADO ESPECIAL;;IE037
+ROCIO;KAWAY;rokazu@hotmail.com;GENERAL;04144225322;GE037
+JORGE ANDRÉS;GUAREPE;jaguarepek1@gmail.com;GENERAL;;GE038
+LENDA;GARCÍA;;INVITADO ESPECIAL;;IE038

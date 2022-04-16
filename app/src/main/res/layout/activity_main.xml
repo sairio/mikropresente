@@ -6,9 +6,9 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:background="@drawable/pantalla_02"
-    android:paddingEnd="224dp"
+    android:paddingEnd="230dp"
     android:paddingStart="0dp"
-    android:paddingTop="95dp"
+    android:paddingTop="100dp"
     android:keepScreenOn="true">
 
     <SurfaceView
@@ -16,7 +16,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center" />
-
 
     <TextView
         android:id="@+id/tvPerson"
@@ -56,8 +55,9 @@
         android:id="@+id/tvPosition"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="6dp"
-        android:layout_marginTop="115dp"
+        android:padding="10dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="10dp"
         android:fontFamily="@font/oswald_bold"
         android:text="@string/textview"
         android:textAlignment="viewStart"
